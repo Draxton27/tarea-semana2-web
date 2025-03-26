@@ -3,19 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Daniel Osorio" content="UAM Managua">
-    <meta name="description" content="Tarea semana 2 de la clase de Disenio Web">
-    <title>Tarea</title>
+    <meta name="author" content="Daniel Osorio">
+    <meta name="description" content="Receta de Torta de Chocolate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Receta: Torta de Chocolate</title>
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        
-    </footer>
+    <div class="container">
+        <header>
+            <h1 class="text-success text-center my-4">Receta: Torta de Chocolate</h1>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Recetas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ingredientes">Ingredientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#preparacion">Preparación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#comentarios">Comentarios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="carouselExampleIndicators" class="carousel slide mb-4">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="OIP.jpg" class="d-block w-100" height="860" alt="Torta de Chocolate">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="R (1).jpg" class="d-block w-100" alt="Torta de Chocolate">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="3 torta de chocolate.jpg" class="d-block w-100" alt="Torta de chocolate">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <section id="ingredientes" class="mb-4">
+                <h2 class="text-info">Ingredientes</h2>
+                <ul>
+                    <li>2 tazas de harina</li>
+                    <li>1 taza de azúcar</li>
+                    <li>1 taza de cacao en polvo</li>
+                    <li>1 taza de leche</li>
+                    <li>3 huevos</li>
+                    <li>1/2 taza de aceite vegetal</li>
+                    <li>1 cucharadita de polvo para hornear</li>
+                    <li>1 pizca de sal</li>
+                </ul>
+            </section>
+            <section id="preparacion" class="mb-4">
+                <h2 class="text-info">Preparación</h2>
+                <ol>
+                    <li>Precalienta el horno a 180°C (350°F).</li>
+                    <li>En un tazón grande, mezcla la harina, el azúcar, el cacao en polvo, el polvo para hornear y la sal.</li>
+                    <li>Agrega los huevos, la leche y el aceite vegetal. Mezcla bien hasta obtener una masa homogénea.</li>
+                    <li>Vierte la mezcla en un molde previamente engrasado y enharinado.</li>
+                    <li>Hornea durante 30-35 minutos o hasta que al insertar un palillo, este salga limpio.</li>
+                    <li>Deja enfriar antes de desmoldar y decorar al gusto.</li>
+                </ol>
+            </section>
+            <section id="comentarios" class="mb-4">
+                <h2 class="text-info">Deja tu comentario</h2>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentario" class="form-label">Comentario:</label>
+                        <textarea id="comentario" name="comentario" class="form-control" rows="4" required placeholder="Escribe tu comentario aquí"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-success">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="text-center bg-secondary text-white py-3">
+            <p>&copy; 2023 Daniel Osorio. Receta inspirada en la cocina tradicional.</p>
+        </footer>
+    </div>
 </body>
-</html>l
+</html>
